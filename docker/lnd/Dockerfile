@@ -9,7 +9,7 @@ ENV GODEBUG netdns=cgo
 # Install dependencies and install/build lnd.
 RUN apk add --no-cache --update alpine-sdk \
     git \
-    make 
+    make
 
 # Copy in the local repository to build from.
 COPY . /go/src/github.com/lightningnetwork/lnd
